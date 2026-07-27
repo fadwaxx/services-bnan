@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nabd-albanan.vercel.app/sitemap.xml
+Sitemap: https://services-bnan.vercel.app/sitemap.xml
