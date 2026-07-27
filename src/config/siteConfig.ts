@@ -3,7 +3,7 @@ export const siteConfig = {
   officeName: "نبض البنان للخدمات العامة",
   shortName: "نبض البنان",
   // رقم واتساب المكتب (بالصيغة الدولية بدون + أو صفر البداية)
-  whatsappNumber: "966551323433",
+  whatsappNumber: "966535156789",
   email: "info@example.com",
   location: "حائل، المملكة العربية السعودية",
   workingHours: " من 9 صباحاً حتى 12 مساءً - ومن 4 مساءً حتى 9 مساءً",
