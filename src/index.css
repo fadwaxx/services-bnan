@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #b3c5d6 transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b3c5d6;
+  border-radius: 8px;
+}
+
+:focus-visible {
+  outline: 2px solid #0f2540;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+body {
+  direction: rtl;
+}
+
+.section-title {
+  @apply font-display font-extrabold text-navy text-3xl sm:text-4xl;
+}
+
+.section-eyebrow {
+  @apply inline-block text-xs sm:text-sm font-bold tracking-wide text-navy-500 bg-navy-50 px-3 py-1 rounded-full;
+}
+
+.container-x {
+  @apply mx-auto max-w-7xl px-5 sm:px-8;
+}
+
+body {
+  background: #f7fcfd;
+  color: #26343d;
+}
+
+.hero-scene {
+    width: 100%;
+    background-image: url("/assets/hero-desktop.webp");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+  }
+  
+  /* التابلت */
+  @media (max-width: 1023px) {
+    .hero-scene {
+      background-position: center bottom;
+      background-size: cover;
+    }
+  }
+  
+  /* الجوال */
+  @media (max-width: 768px) {
+    .hero-scene {
+      background-image: url("/assets/hero-mobile.webp");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .hero-scene {
+      min-height: 920px;
+      background-position: center bottom;
+    }
+  }
+
+.hero-waves {
+  overflow: hidden;
+}
+
+.wave-layer {
+  position: absolute;
+  bottom: -1px;
+  left: -5%;
+  width: 110%;
+  height: 100%;
+  will-change: transform;
+}
+
+.wave-layer-back {
+  animation: waveDriftBack 11s ease-in-out infinite alternate;
+}
+
+.wave-layer-front {
+  animation: waveDriftFront 8s ease-in-out infinite alternate;
+}
+
+@keyframes waveDriftBack {
+  0% { transform: translate3d(-1.5%, 5px, 0) scaleX(1.02); }
+  50% { transform: translate3d(1.5%, -2px, 0) scaleX(1.04); }
+  100% { transform: translate3d(-0.5%, 4px, 0) scaleX(1.01); }
+}
+
+@keyframes waveDriftFront {
+  0% { transform: translate3d(1.5%, 2px, 0) scaleX(1.03); }
+  50% { transform: translate3d(-1.8%, -4px, 0) scaleX(1.01); }
+  100% { transform: translate3d(0.7%, 3px, 0) scaleX(1.04); }
+}
+
+
