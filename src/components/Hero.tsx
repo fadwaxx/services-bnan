@@ -98,20 +98,26 @@ export default function Hero() {
       />
 <div
   className="
-    container-x
-    relative
-    z-20
-    flex
-    min-h-[450px]
-    items-center
-    justify-center
-    sm:min-h-[480px]
-    md:min-h-[500px]
-    lg:min-h-[520px]
-    xl:min-h-[520px]
-    xl:justify-end
-    2xl:min-h-[560px]
-  "
+  relative
+  z-20
+  flex
+  w-full
+  max-w-[1600px]
+  mx-auto
+  px-3
+  sm:px-6
+  lg:px-8
+  xl:px-10
+  min-h-[450px]
+  items-center
+  justify-end
+  sm:min-h-[480px]
+  md:min-h-[500px]
+  lg:min-h-[520px]
+  xl:min-h-[520px]
+  2xl:min-h-[560px]
+"
+
   dir="rtl"
 >
 <div
@@ -305,25 +311,31 @@ export default function Hero() {
 </div>
   {/* بطاقات الإحصائيات */}
   <motion.div
-    initial={{ opacity: 0, y: 28 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{
-      duration: 0.7,
-      delay: 0.42,
-      ease: "easeOut",
-    }}
-    className="
-      container-x
-      relative
-      z-30
-      mt-4
-      pb-36
-      sm:mt-6
-      sm:pb-40
-      lg:mt-2
-      lg:pb-44
-    "
-  >
+  initial={{ opacity: 0, y: 28 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{
+    duration: 0.7,
+    delay: 0.42,
+    ease: "easeOut",
+  }}
+  className="
+    relative
+    z-30
+    mx-auto
+    mt-4
+    w-full
+    max-w-[1600px]
+    px-3
+    pb-36
+    sm:mt-6
+    sm:px-6
+    sm:pb-40
+    lg:mt-2
+    lg:px-8
+    lg:pb-44
+    xl:px-10
+  "
+>
     <div
    className="
    mx-auto
