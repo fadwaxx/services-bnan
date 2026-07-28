@@ -87,7 +87,7 @@ export default function Navbar() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <div className="container-x relative h-32 sm:h-36 xl:h-44" dir="rtl">
+      <div className="container-x relative h-20 sm:h-24 xl:h-28" dir="rtl">
         {/* الشعار مستقل في يمين الصفحة */}
         <a
           href="#home"
