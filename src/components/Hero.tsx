@@ -102,32 +102,37 @@ export default function Hero() {
     relative
     z-20
     flex
-    min-h-[420px]
+    min-h-[450px]
     items-center
     justify-center
-    sm:min-h-[450px]
-    lg:min-h-[540px]
-    xl:min-h-[580px]
+    sm:min-h-[480px]
+    md:min-h-[500px]
+    lg:min-h-[520px]
+    xl:min-h-[520px]
     xl:justify-end
+    2xl:min-h-[560px]
   "
   dir="rtl"
 >
-  <div
-   className="
-   mx-auto
-   flex
-   w-full
-   max-w-[680px]
-   flex-col
-   items-end
-   text-right
-   sm:max-w-[720px]
-   lg:max-w-[700px]
-   xl:mr-0
-   xl:ml-auto
-   xl:max-w-[760px]
- "
-  >
+<div
+  className="
+    mx-auto
+    flex
+    w-full
+    max-w-[680px]
+    flex-col
+    items-center
+    text-center
+    sm:max-w-[720px]
+    md:max-w-[740px]
+    lg:max-w-[760px]
+    xl:mr-0
+    xl:ml-auto
+    xl:items-end
+    xl:text-right
+    2xl:max-w-[820px]
+  "
+>
     <motion.span
       variants={fadeUp}
       initial="hidden"
