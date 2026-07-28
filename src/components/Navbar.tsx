@@ -87,7 +87,7 @@ export default function Navbar() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <div className="container-x relative h-32 sm:h-36 lg:h-44" dir="rtl">
+      <div className="container-x relative h-32 sm:h-36 xl:h-44" dir="rtl">
         {/* الشعار مستقل في يمين الصفحة */}
         <a
           href="#home"
@@ -96,54 +96,50 @@ export default function Navbar() {
             handleLinkClick("#home");
           }}
           className="
-            absolute
-            right-[0px]
-            top-0
-            z-20
-            flex
-            items-center
-            sm:right-[0px]
-            sm:top-0
-            lg:right-[-80px]
-            lg:top-0
-          "
+  absolute
+  right-0
+  top-0
+  z-20
+  flex
+  items-center
+"
           aria-label="نبض البنان للخدمات العامة"
         >
           <img
             src="/assets/nabd-logo.png"
             alt="نبض البنان للخدمات العامة"
             className="
-              h-24
-              w-auto
-              object-contain
-              sm:h-28
-              lg:h-36
-              xl:h-40
-            "
+            h-24
+            w-auto
+            object-contain
+            sm:h-28
+            xl:h-36
+            2xl:h-40
+          "
           />
         </a>
 
         {/* روابط التنقل مستقلة في منتصف الصفحة */}
         <nav
-          className="
-            fixed
-            left-1/2
-            top-6
-            z-50
-            hidden
-            -translate-x-1/2
-            items-center
-            justify-center
-            gap-1
-            rounded-full
-            bg-white/45
-            px-4
-            py-2
-            backdrop-blur-md
-            lg:flex
-            xl:gap-2
-            xl:px-6
-          "
+  className="
+    fixed
+    left-1/2
+    top-6
+    z-50
+    hidden
+    -translate-x-1/2
+    items-center
+    justify-center
+    gap-1
+    rounded-full
+    bg-white/45
+    px-4
+    py-2
+    backdrop-blur-md
+    xl:flex
+    xl:gap-2
+    xl:px-6
+  "
           aria-label="التنقل الرئيسي"
         >
           {navLinks.map((link) => {
@@ -209,7 +205,7 @@ export default function Navbar() {
             duration-300
             hover:-translate-y-0.5
             hover:bg-cyan-50
-            lg:inline-flex
+            xl:inline-flex
           "
         >
           <MessageCircle size={20} />
@@ -221,21 +217,21 @@ export default function Navbar() {
           type="button"
           onClick={() => setOpen((value) => !value)}
           className="
-            absolute
-            left-0
-            top-6
-            inline-flex
-            items-center
-            justify-center
-            rounded-xl
-            bg-white
-            p-2.5
-            text-cyan-600
-            shadow-md
-            transition
-            hover:bg-cyan-50
-            lg:hidden
-          "
+          absolute
+          left-0
+          top-6
+          inline-flex
+          items-center
+          justify-center
+          rounded-xl
+          bg-white
+          p-2.5
+          text-cyan-600
+          shadow-md
+          transition
+          hover:bg-cyan-50
+          xl:hidden
+        "
           aria-label={open ? "إغلاق القائمة" : "فتح القائمة"}
           aria-expanded={open}
         >
@@ -260,7 +256,7 @@ export default function Navbar() {
               border-cyan-100
               bg-white/95
               backdrop-blur-xl
-              lg:hidden
+              xl:hidden
             "
           >
             <div

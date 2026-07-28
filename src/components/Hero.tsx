@@ -65,15 +65,16 @@ export default function Hero() {
     <section
     id="home"
     className="
-      hero-scene
-      relative
-      min-h-[620px]
-      pt-20
-      sm:min-h-[660px]
-      sm:pt-24
-      lg:min-h-[700px]
-      lg:pt-14
-    "
+    hero-scene
+    relative
+    min-h-[620px]
+    pt-20
+    sm:min-h-[660px]
+    sm:pt-24
+    lg:min-h-[700px]
+    lg:pt-28
+    xl:pt-14
+  "
   >
       {/* طبقات خفيفة لتحسين وضوح النص */}
       <div
@@ -95,23 +96,37 @@ export default function Hero() {
         "
         aria-hidden="true"
       />
-<div className="relative z-20 flex items-center justify-end min-h-[420px] pr-[16px] sm:min-h-[450px] sm:pr-[24px] lg:min-h-[580px] lg:pr-[192px]"
-
+<div
+  className="
+    container-x
+    relative
+    z-20
+    flex
+    min-h-[420px]
+    items-center
+    justify-center
+    sm:min-h-[450px]
+    lg:min-h-[540px]
+    xl:min-h-[580px]
+    xl:justify-end
+  "
   dir="rtl"
 >
   <div
-    className="
-      mr-0
-      ml-auto
-      flex
-      w-full
-      max-w-[680px]
-      flex-col
-      items-end
-      text-right
-      sm:max-w-[720px]
-      lg:max-w-[760px]
-    "
+   className="
+   mx-auto
+   flex
+   w-full
+   max-w-[680px]
+   flex-col
+   items-end
+   text-right
+   sm:max-w-[720px]
+   lg:max-w-[700px]
+   xl:mr-0
+   xl:ml-auto
+   xl:max-w-[760px]
+ "
   >
     <motion.span
       variants={fadeUp}
@@ -162,7 +177,7 @@ export default function Hero() {
         text-ink
         sm:mt-6
         sm:text-6xl
-        lg:text-[4.1rem]
+        lg:text-[3.6rem]
         xl:text-[4.5rem]
       "
     >
@@ -306,8 +321,7 @@ export default function Hero() {
   >
     <div
    className="
-   mr-0
-   ml-auto
+   mx-auto
    grid
    w-full
    max-w-[820px]
@@ -315,8 +329,8 @@ export default function Hero() {
    gap-3
    sm:grid-cols-4
    sm:gap-4
-   lg:mr-[-290px]
-   lg:ml-auto
+   xl:mr-0
+   xl:ml-auto
  "
     >
       {stats.map((stat) => {
